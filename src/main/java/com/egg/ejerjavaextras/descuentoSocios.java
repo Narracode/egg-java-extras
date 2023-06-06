@@ -9,7 +9,7 @@ public class descuentoSocios {
 
     public static void main(String[] args) {
         double desc = ingresarMembresia();
-        System.out.print("Costo del tratamiento > ");
+        System.out.println("Costo del tratamiento");
         double costo = leerCantidad(1,15000);
         double importe = costo-(costo*desc);
         System.out.println("Importe para Socios $"+importe);
