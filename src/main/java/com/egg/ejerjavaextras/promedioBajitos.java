@@ -25,7 +25,7 @@ public class promedioBajitos {
         p = Math.round(g/n * 100) / 100d;
         pB = Math.round(b/cB * 100) / 100d;
         System.out.println("La estatura promedio es de "+p+"m, mientras que "
-                +"el promedio de \nlas estaturas debajo de 1.60m  es de "+pB);
+                +"el promedio de \nlas estaturas debajo de 1.60m  es de "+pB+"m");
     }
     
     public static void asiNo() {
