@@ -10,7 +10,7 @@ public class adivinaNumero {
 
     public static void main(String[] args) {
         int tgt = (int)((Math.random()*10)*(Math.random()*10)), n=0;
-        System.out.println(tgt);
+//        System.out.println(tgt);
         do {
             n = leerCantidad(1,100);
             if (n == tgt) {
