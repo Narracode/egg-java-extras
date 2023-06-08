@@ -15,7 +15,6 @@ public class escaleraNums {
     }
 
     public static void dibujaEscalera(int escalones) {
-        String aux = "";
 
         for (int i = 1; i <= escalones; i++) {
             for (int j = 1; j <= i; j++) {
