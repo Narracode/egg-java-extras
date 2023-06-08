@@ -15,14 +15,14 @@ public class edadDeHijos {
             System.out.println("\n¿Hijos en la familia "+i+"?");
             int M = leerCantidad(0,9);
             for (int j = 1; j <= M; j++) {
-                System.out.println("Estatura del hijo "+j+" en centimetros");
-                sumaE += leerCantidad(50,230);
+                System.out.println("Edad del hijo "+j);
+                sumaE += leerCantidad(0,18);
                 regs++;
             }
         }
         int promE = sumaE/regs;
-        System.out.println("El promedio de estatura de chicos del barrio es "
-            +promE);
+        System.out.println("El promedio de edad de los chicos del barrio es de "
+            + promE + "años");
     }
 
     public static void asiNo() {
