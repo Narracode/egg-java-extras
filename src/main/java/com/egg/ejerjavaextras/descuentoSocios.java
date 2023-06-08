@@ -10,7 +10,7 @@ public class descuentoSocios {
     public static void main(String[] args) {
         double desc = ingresarMembresia();
         System.out.println("Costo del tratamiento");
-        double costo = leerCantidad(1,15000);
+        double costo = leerCantidad(100,19999.99);
         double importe = costo-(costo*desc);
         System.out.println("Importe para Socios $"+importe);
     }
@@ -21,14 +21,15 @@ public class descuentoSocios {
     
     public static double leerCantidad(double min, double max) {
         Scanner leer = new Scanner(System.in);
-        System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
         double x = 0;
+        
         do {
+            System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
             x = leer.nextInt();
-            if (x<min && x>max) {
+            if (x<min || x>max) {
                 asiNo();
             }
-        } while (x<min && x>max);
+        } while (x<min || x>max);
         return x;
     }
     

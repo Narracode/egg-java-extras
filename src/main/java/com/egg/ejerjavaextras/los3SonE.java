@@ -19,9 +19,5 @@ public class los3SonE {
                         aux = i+"-"+j+"-E";
                     }
                     System.out.println(aux);
-                }
-            }
-        }
-    }
-    
+                }}}}
 }

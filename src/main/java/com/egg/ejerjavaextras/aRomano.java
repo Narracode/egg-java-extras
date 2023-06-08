@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class aRomano {
 
     public static void main(String[] args) {
-        System.out.println("Numero Romanos");
+        System.out.println("Numeros Romanos");
         enRomanos(leerCantidad(1,10));
     }
     
@@ -39,14 +39,15 @@ public class aRomano {
     
     public static int leerCantidad(int min, int max) {
         Scanner leer = new Scanner(System.in);
-        System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
         int x = 0;
+        
         do {
+            System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
             x = leer.nextInt();
-            if (x<min && x>max) {
+            if (x<min || x>max) {
                 asiNo();
             }
-        } while (x<min && x>max);
+        } while (x<min || x>max);
         return x;
     }
 }

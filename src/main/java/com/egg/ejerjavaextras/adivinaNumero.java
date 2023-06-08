@@ -1,5 +1,4 @@
 package com.egg.ejerjavaextras;
-
 import java.util.Scanner;
 
 /**
@@ -10,7 +9,7 @@ public class adivinaNumero {
 
     public static void main(String[] args) {
         int tgt = (int)((Math.random()*10)*(Math.random()*10)), n=0;
-//        System.out.println(tgt);
+
         do {
             n = leerCantidad(1,100);
             if (n == tgt) {
@@ -28,6 +27,7 @@ public class adivinaNumero {
     public static int leerCantidad(int min, int max) {
         Scanner leer = new Scanner(System.in);
         int x = 0;
+        
         do {
             System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
             x = leer.nextInt();
