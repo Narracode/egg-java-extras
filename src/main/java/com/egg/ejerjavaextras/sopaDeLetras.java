@@ -39,10 +39,10 @@ public class sopaDeLetras {
                 do {
                     System.out.print("Palabra numero "+(i+1)+"> ");
                     palabra = leer.next();
-                    if (palabra.length() > 5 || palabra.length() == 0) {
+                    if (palabra.length() > 5 || palabra.length() < 3) {
                        asiNo();
                     }
-                } while (palabra.length() > 5 || palabra.length() == 0);
+                } while (palabra.length() > 5 || palabra.length() < 3);
                 obj[i] = palabra.toCharArray();
             }
            
