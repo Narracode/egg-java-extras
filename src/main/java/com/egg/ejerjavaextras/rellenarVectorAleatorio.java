@@ -1,5 +1,4 @@
 package com.egg.ejerjavaextras;
-
 import java.util.Scanner;
 
 /**
@@ -8,9 +7,6 @@ import java.util.Scanner;
  */
 public class rellenarVectorAleatorio {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         System.out.println("Dimension del vector");
         int[] vector = new int[leerCantidad(1,100)];
