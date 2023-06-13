@@ -21,7 +21,7 @@ public class compararVectores {
     public static void compararVectores(int[] vA, int[] vB) {
         System.out.println("\nComparando...\n   Vector A:");
         mostrarVector(vA);
-        System.out.println("\n Vector B");
+        System.out.println("\n   Vector B");
         mostrarVector(vB);
         boolean iguales = true;
         int i = 0;
